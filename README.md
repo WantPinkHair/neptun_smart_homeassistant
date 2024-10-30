@@ -4,6 +4,10 @@
 - добавлено 5 беспроводных датчиков, если нужно больше или меньше изменяем по примеру.
 - сделано на основе [Карта памяти регистров модуля управления Neptun Smart для протокола MODBUS-RTU](https://s.siteapi.org/1b05f7bbad9a56b/docs/3jl34bgaunmsgcgog04ooccsswws4s)
 
+![image](https://github.com/user-attachments/assets/873a1922-a747-4c4b-8847-96f22fd79b56)
+![image](https://github.com/user-attachments/assets/6225688e-f1ec-4cfa-89b2-94264520e880)
+
+
 ```
 modbus:
   - name: neptun_smart
