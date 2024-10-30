@@ -1,2 +1,2 @@
-# neptun_smart_homeassistant
-Home Assistant config for Neptun Smart
+# Конфиг файл для Home Assistant для Neptun Smart системы защиты от протечек
+работает по Modbus TCP
