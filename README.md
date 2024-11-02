@@ -469,3 +469,18 @@ switch:
 
 
 ```
+
+В основном конфиге только 1 проводная линия. Если нужно добавить дополнительные проводные линии, берем отсюда и вставляем там где LeakSensor 1:
+```
+    - name: "LeakSensor 1"
+      state: "{{ states('sensor.leak_sensor_raw') | int | bitwise_and(1) > 0 }}"  # Бит 0 регистра 3
+
+    - name: "LeakSensor 2"
+      state: "{{ states('sensor.leak_sensor_raw') | int | bitwise_and(2) > 0 }}"  # Бит 1 регистра 3
+
+    - name: "LeakSensor 3"
+      state: "{{ states('sensor.leak_sensor_raw') | int | bitwise_and(4) > 0 }}"  # Бит 2 регистра 3
+
+    - name: "LeakSensor 4"
+      state: "{{ states('sensor.leak_sensor_raw') | int | bitwise_and(8) > 0 }}"  # Бит 3 регистра 3
+```
