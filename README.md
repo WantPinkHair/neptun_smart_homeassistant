@@ -75,6 +75,100 @@ modbus:
         data_type: uint16
         scan_interval: 10
 
+# Счетчики воды.
+# Зависит от того в какой слот подключена плата S
+# И в какое гнездо платы подключен счетчик P
+      - name: "Water counter S1 P1"
+        address: 107
+        slave: 240
+        input_type: holding
+        data_type: int32 
+        device_class: water
+        unit_of_measurement: "m³"
+        state_class: TOTAL_INCREASING
+        scale: 0.001
+        precision: 3
+        scan_interval: 10
+      - name: "Water counter S1 P2"
+        address: 109
+        slave: 240
+        input_type: holding
+        data_type: int32 
+        device_class: water
+        unit_of_measurement: "m³"
+        state_class: TOTAL_INCREASING
+        scale: 0.001
+        precision: 3
+        scan_interval: 10
+
+      - name: "Water counter S2 P1"
+        address: 111
+        slave: 240
+        input_type: holding
+        data_type: int32 
+        device_class: water
+        unit_of_measurement: "m³"
+        state_class: TOTAL_INCREASING
+        scale: 0.001
+        precision: 3
+        scan_interval: 10
+      - name: "Water counter S2 P2"
+        address: 113
+        slave: 240
+        input_type: holding
+        data_type: int32 
+        device_class: water
+        unit_of_measurement: "m³"
+        state_class: TOTAL_INCREASING
+        scale: 0.001
+        precision: 3
+        scan_interval: 10
+        
+      - name: "Water counter S3 P1"
+        address: 115
+        slave: 240
+        input_type: holding
+        data_type: int32 
+        device_class: water
+        unit_of_measurement: "m³"
+        state_class: TOTAL_INCREASING
+        scale: 0.001
+        precision: 3
+        scan_interval: 10
+      - name: "Water counter S3 P2"
+        address: 117
+        slave: 240
+        input_type: holding
+        data_type: int32 
+        device_class: water
+        unit_of_measurement: "m³"
+        state_class: TOTAL_INCREASING
+        scale: 0.001
+        precision: 3
+        scan_interval: 10
+        
+      - name: "Water counter S4 P1"
+        address: 119
+        slave: 240
+        input_type: holding
+        data_type: int32 
+        device_class: water
+        unit_of_measurement: "m³"
+        state_class: TOTAL_INCREASING
+        scale: 0.001
+        precision: 3
+        scan_interval: 10
+      - name: "Water counter S4 P2"
+        address: 121
+        slave: 240
+        input_type: holding
+        data_type: int32 
+        device_class: water
+        unit_of_measurement: "m³"
+        state_class: TOTAL_INCREASING
+        scale: 0.001
+        precision: 3
+        scan_interval: 10
 
 
 # Template sensor для двоичного представления значения
